@@ -1,5 +1,5 @@
 "vundle
-set nocompatible
+set nocompatible    " screw the old vi
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -47,9 +47,8 @@ call vundle#end()
 syntax enable
 colorscheme monokai
 
-
 filetype plugin indent on    " enables filetype detection
-let g:SimpylFold_docstring_preview = 1
+let g:SimpylFold_docstring_preview = 1  " see doc strings for folded code
 
 "autocomplete
 let g:ycm_autoclose_preview_window_after_completion=1
@@ -71,14 +70,17 @@ map <F2> :NERDTreeToggle<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
 
-"Use tabs and not spaces
-set autoindent noexpandtab tabstop=4 shiftwidth=4
+"Use tabs and not spaces, disables for now, PEP8
+" set autoindent noexpandtab tabstop=4 shiftwidth=4
 
 "I don't like swap files
 set noswapfile
 
 "turn on numbering
 set nu
+
+" enable system clipboard
+set clipboard=unnamed
 
 "set relative numbering on
 set relativenumber
