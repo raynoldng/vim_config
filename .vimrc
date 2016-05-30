@@ -24,7 +24,6 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'nelstrom/vim-markdown-preview'
 "python sytax checker
 Plugin 'nvie/vim-flake8'
-Plugin 'vim-scripts/Pydiction'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 
@@ -36,10 +35,6 @@ Plugin 'klen/rope-vim'
 Plugin 'ervandew/supertab'
 ""code folding
 Plugin 'tmhedberg/SimpylFold'
-
-"Colors!!!
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'jnurmine/Zenburn'
 
 call vundle#end()
 
@@ -64,8 +59,8 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "NERDTree Settings
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 silent! nmap <C-p> :NERDTreeToggle<CR>
-silent! map <F3> :NERDTreeFind<CR>
-map <F2> :NERDTreeToggle<CR>
+silent! nmap <F3> :NERDTreeFind<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
 
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
