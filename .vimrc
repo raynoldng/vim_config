@@ -1,1 +1,1 @@
-./.vimrc
+/home/postasip/.vimrc
